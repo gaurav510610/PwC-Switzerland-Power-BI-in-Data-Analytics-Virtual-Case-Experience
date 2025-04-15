@@ -23,7 +23,8 @@ This is the first task of Pwc Virtual Internship on forage platform. This Power 
      - Agents performance quadrant -> average handle time(talk duration) vs calls answered
 # Data Sourcing
 
-The Dataset used for this analysis was provided by [Pwc Switzerland](https://www.pwc.ch/en/careers-with-pwc/students/virtual-case-experience.html) and available here: [Call Center Dataset](https://github.com/calmk/PWC-Virtual-Case-Experience/blob/main/Task%202%3A%20Call%20Center%20Dashboard/01%20Call-Center-Dataset.xlsx)
+The Dataset used for this analysis was provided by [Pwc Switzerland](https://www.pwc.ch/en/careers-with-pwc/students/virtual-case-experience.html) and available here: [Call Center Dataset](https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%201-%20Call%20Center%20Trends/01%20Call-Center-Dataset.xlsx)
+
 # Data Preparation 
 
 
