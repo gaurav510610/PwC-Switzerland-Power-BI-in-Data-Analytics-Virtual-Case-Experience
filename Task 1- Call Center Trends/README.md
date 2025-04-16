@@ -50,4 +50,37 @@ Data Cleaning for the dataset was done in Power Query as follows:
 #  Data Modelling 
 Since there is one table so there is no need of Data Modelling as we will be pulling our data from the one fact table only.
 # Data Visualization
-![Alt text of the image]()
+![Alt text of the image](https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%201-%20Call%20Center%20Trends/Call%20Center%20Trends%20Dashboard-1.png)
+Data visualization for the datasets was done in Microsoft Power BI Desktop:
+
+• The Call Center Manager Page: Shows KPIs including overall customer satisfaction, overall calls answered/abandoned, calls by time, average speed of answer, agents performance quadrant -> average handle time(talk duration) vs calls answered
+
+# DAX Calculated Measures and KPI’S
+   *  Call Volume = COUNT(Sheet1[Call Id])
+   *  Satisfaction Rating1=CALCULATE(COUNT(Sheet1[Satisfaction rating]),Sheet1[Satisfaction rating]=4|| Sheet1[Satisfaction rating]=5)
+   *  Total Satisfaction Rating = COUNT(Sheet1[Satisfaction rating])
+   *  CSAT% (Customer Satisfaction) =DIVIDE([Satisfaction Rating1],[Total Satisfaction Rating],0)
+   *  callResolved = CALCULATE(COUNT('Sheet1'[Resolved]),'Sheet1'[Resolved]="Y")
+   *  callunResolved = CALCULATE(COUNT('Sheet1'[Resolved]),'Sheet1'[Resolved]="N")
+   *  Call Resolved% = DIVIDE([Call Resolved],[Call Volume],0)
+   *  Call Answered = CALCULATE(COUNT(Sheet1[Answered (Y/N)]),Sheet1[Answered (Y/N)]="Y")
+   *  Call Answered% = DIVIDE([Call Answered],[Call Volume],0)
+   *  Call Abandoned=CALCULATE(COUNT(Sheet1[Answered (Y/N)]),Sheet1[Answered (Y/N)]="N")
+   *  Call Abandoned%=DIVIDE([Call Abandoned],[Call Volume],0)
+   *  Average Speed of answer = Average('Sheet1'[Speed of answer in seconds]
+   *  Average satisfaction rating = Average('Sheet1'[Satisfaction rating])
+   *  %TotalCallsAnswered = DIVIDE([Call Resolved],COUNT(Sheet1[Call Id]))
+- **DAX Calculated Columns:**
+     - Dayname=FORMAT(Sheet1[Date],"dddd")
+     - DayNo=WEEKDAY(Sheet1[Date])
+
+# Key Insights and recommedations :
+ 👉 Out of 5000  total calls,4054 calls were answerd  while 946 calls were were abandoned .This indicates a need to reduce the number of abandoned calls.
+ 
+ 👉 Among 8  agents ,Jim receive the highest no. of calls with 666,followed by martha,dan and diane, each receiving 633-638 calls.
+ this suggest in variation in call distribution among agents.
+ 
+ 👉 Martha has highest customer satisfaction (CSAT %) rate at 42.48%,followed by stewart at 42.10% and becky at 41.36%.These agents can serves as examples for  others to improve CSAT rates. 
+ 👉 Dan has highest call resolution rate at 74.41 % ,followed by joe and becky .Sharing their Strategies can improve overall call resolution rates .
+ 👉 Diane  had  highest percentage of abandoned call at 20.85%  ,followed by greg and jim .focussing on reducing call abandoned rates for these agent is important.
+ 
