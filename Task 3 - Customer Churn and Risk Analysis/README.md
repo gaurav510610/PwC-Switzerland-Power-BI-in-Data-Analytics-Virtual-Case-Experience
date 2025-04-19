@@ -2,6 +2,8 @@
 Power BI dashboard prepared as part of the virtual internship program of PwC Switzerland The telecom dataset has a total of 7043 datapoints out of which 1869 datapoints are of churned customers. The motive of this project was to analyse the trends among churned customers, parameters affecting churn, customers at the risk of churn, tickets dashboarding to analyse churn.
 # Data Sources
 The data for this project was provided by PWC Virtual Internship Program provided by Forage. The data includes customer demographics, usage patterns, survey responses, and customer feedback. The data was cleaned and transformed using Power Query in Power BI Desktop to create the dashboard.
+
+<a href ="https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%203%20-%20Customer%20Churn%20and%20Risk%20Analysis/02%20Churn-Dataset.xlsx">Dataset</a>
 # Technologies Used
 **Data storage:** CSV/Excel files
 - **Excel:** For initial data cleaning and manipulation.
@@ -36,8 +38,23 @@ Measures used in all visualization are:
 - Streaming Movies in % = DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[StreamingMovies]),'01 Churn-Dataset'[StreamingMovies]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[StreamingMovies]),'01 Churn-Dataset'[Churn]="Yes"),0)
 - Streaming TV in % = DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[StreamingTV]),'01 Churn-Dataset'[StreamingTV]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[StreamingTV]),'01 Churn-Dataset'[Churn]="Yes"),0)
 - Tech Support in % =DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[TechSupport]), '01 Churn-Dataset'[TechSupport] ="Yes", '01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[TechSupport]),'01 Churn-Dataset'[Churn]="Yes"),0)
-
- # Dashboard: 
- You can check out my dashboard here
+#  Dashboard
+You can check out my dashboard <a 
+ href ="https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%203%20-%20Customer%20Churn%20and%20Risk%20Analysis/Churn%20analysis.pbix">here</a> .
+ 
+# Dashboard Image
+**Figure 1.** shows visualizations from Customer churn Exploratory)
+![Alt text of the image](https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%203%20-%20Customer%20Churn%20and%20Risk%20Analysis/Customer%20Churn%20exploratory%20dashboard-1.png)
+**Figure 2.** shows visualizations from Customer Risk Analysis
+![Alt text of the image](https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%203%20-%20Customer%20Churn%20and%20Risk%20Analysis/Customer%20Risk%20analysis-1.png)
+# Insights:
+- Paperless Billing Preference: Majority of customers prefer paperless billing.
+- Payment Method Trends: Electronic check or mailed check are the preferred payment methods.
+- Gender Parity: Nearly equal representation of male and female customers.
+- Contract Preferences: Month-to-month contracts exhibit the highest churn rate, while 2-year contracts demonstrate the highest retention rate.
+- Service Demand: Fiber optics emerge as the most popular internet service.
+- Demographic Breakdown: The dataset includes 3402 partners, 2110 dependents, and 1142 senior citizens, providing valuable insights into customer demographics and preferences.
+- Tech tickets consisted of highest proportion among churned customers and customers using fiber optic or electronic payment method raised higher tech tickets as compared to others. Hence support services for these categories must be responsive with SLAs as low as possible
+- Among churned customers 69% customers used the fiber optic internet service and 57% had the electronic payment mode
 
 
