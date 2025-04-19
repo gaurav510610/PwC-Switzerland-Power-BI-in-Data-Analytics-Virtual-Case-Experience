@@ -1,4 +1,4 @@
-## Customer Churn Retention
+# Customer Churn Retention
 Power BI dashboard prepared as part of the virtual internship program of PwC Switzerland The telecom dataset has a total of 7043 datapoints out of which 1869 datapoints are of churned customers. The motive of this project was to analyse the trends among churned customers, parameters affecting churn, customers at the risk of churn, tickets dashboarding to analyse churn.
 # Data Sources
 The data for this project was provided by PWC Virtual Internship Program provided by Forage. The data includes customer demographics, usage patterns, survey responses, and customer feedback. The data was cleaned and transformed using Power Query in Power BI Desktop to create the dashboard.
