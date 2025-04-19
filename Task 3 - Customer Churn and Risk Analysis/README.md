@@ -40,7 +40,7 @@ Measures used in all visualization are:
 - Tech Support in % =DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[TechSupport]), '01 Churn-Dataset'[TechSupport] ="Yes", '01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[TechSupport]),'01 Churn-Dataset'[Churn]="Yes"),0)
 #  Dashboard
 You can check out my dashboard <a 
- href ="https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%203%20-%20Customer%20Churn%20and%20Risk%20Analysis/Churn%20analysis.pbix">here</a> .
+ href ='https://github.com/gaurav510610/PwC-Switzerland-Power-BI-in-Data-Analytics-Virtual-Internship/blob/main/Task%203%20-%20Customer%20Churn%20and%20Risk%20Analysis/Churn%20analysis.pbix'>here</a> .
  
 # Dashboard Image
 **Figure 1.** shows visualizations from Customer churn Exploratory)
@@ -55,6 +55,17 @@ You can check out my dashboard <a
 - Service Demand: Fiber optics emerge as the most popular internet service.
 - Demographic Breakdown: The dataset includes 3402 partners, 2110 dependents, and 1142 senior citizens, providing valuable insights into customer demographics and preferences.
 - Tech tickets consisted of highest proportion among churned customers and customers using fiber optic or electronic payment method raised higher tech tickets as compared to others. Hence support services for these categories must be responsive with SLAs as low as possible
-- Among churned customers 69% customers used the fiber optic internet service and 57% had the electronic payment mode
+- Among churned customers 69% customers used the fiber optic internet service and 57% had the electronic payment mode.
+- 2955 tech tickets were opened and 3632 admin tickets were opened.
+- 7043 customers are at the risk of churn. and The churn rate is 27% and yearly charges is $16.06M charges. and Monthly Charges is $456.12K monthly charges.
+# Recommendation:
+- Proactive Churn Management: Implement targeted offers and personalized communication to reduce churn rates.
+- Enhanced Customer Engagement: Develop initiatives to enhance customer satisfaction and loyalty.
+- Optimized Contract Offerings: Offer flexible contract options with incentives for longer-term commitments.
+- Streamlined Billing Processes: Improve billing processes and promote automatic payment methods.
+- Continuous Monitoring and Analysis: Establish a framework for continuous monitoring of customer data to identify emerging trends.
+- The Company could try convincing customers to subscribe to One-Year and Two-Year contract. The contract are not favorable to customers as they tend to pay more monthly
+- Increase sales of 1 and 2-year contracts by 5% each and Yearly increase of automatic payments by 5%.
+
 
 
